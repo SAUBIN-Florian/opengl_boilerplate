@@ -1,0 +1,11 @@
+# Executables Linux
+*.out
+
+# Objects
+*.o
+
+# Build repo
+build/
+
+# File System
+.DS_Store
