@@ -28,6 +28,7 @@ void framebuffer_callback(GLFWwindow* w, int width, int height) {
 int main() {
 	printf("Open Gl Basic...\n");
 
+	//SETUP
 	glfwSetErrorCallback(error_callback);
 	if (!glfwInit()) {
 		perror("ERROR: cannot initialize glfw");
@@ -49,6 +50,9 @@ int main() {
 		perror("ERROR: cannot initialize glew\n");
 		goto defer;
 	}
+
+	// INIT
+	
 
 	while (!glfwWindowShouldClose(window)) {
 		glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
